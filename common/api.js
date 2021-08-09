@@ -18,5 +18,52 @@ export function topList(){
 			complete: () => {}
 		});
 	});
+}
+export function list(itemId){
+	return uni.request({
+		// url:'http://localhost:3000/top/list?id=19723756',
+		// url:'http://localhost:3000/playlist/detail?id=19723756',
+		url: `${baseUrl}/playlist/detail?id=${itemId}`,
+		method: 'GET',
+	});
+}
 
+export function songDetail(songId){
+	return uni.request({
+		//http://localhost:3000/song/detail?ids=1859245776
+		url: `${baseUrl}/song/detail?ids=${songId}`,
+		method: 'GET',
+	});
+}
+
+export function songSimi(songId){
+	return uni.request({
+		//http://localhost:3000/simi/song?id=1859245776
+		url: `${baseUrl}/simi/song?id=${songId}`,
+		method: 'GET',
+	});
+}
+
+export function songComment(songId){
+	return uni.request({
+		//http://localhost:3000/comment/music?id=1859245776
+		url: `${baseUrl}/comment/music?id=${songId}`,
+		method: 'GET',
+	});
+}
+
+export function songLyric(songId){
+	return uni.request({
+		//http://localhost:3000/lyric?id=1859245776
+		url: `${baseUrl}/lyric?id=${songId}`,
+		method: 'GET',
+	});
+}
+
+export function songUrl(songId){
+	return uni.request({
+		//http://localhost:3000/song/url?id=1859245776
+		url: `${baseUrl}/song/url?id=${songId}`,
+		method: 'GET',
+	});
 }

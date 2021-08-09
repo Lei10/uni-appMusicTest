@@ -25,7 +25,7 @@
 							</view>
 						</view>
 					</view> -->
-					<view class="index-list-item" v-for="(item,index) in topList" :key="index">
+					<view class="index-list-item" v-for="(item,index) in topList" :key="index" @tap="handleToList(item.id)">
 						<view class="index-list-img">
 							<image :src="item.coverImgUrl"></image>
 							<text>{{ item.updateFrequency }}</text>
@@ -64,7 +64,11 @@
 			});
 		},
 		methods: {
-
+			handleToList(itemId){
+				uni.navigateTo({
+					url: '../list/list?itemId=' + itemId,
+				});
+			}
 		}
 	}
 </script>
@@ -118,5 +122,9 @@
 	.index-list-text{
 		font-size: 24rpx;
 		line-height: 66rpx;
+		width: 50vw;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 </style>

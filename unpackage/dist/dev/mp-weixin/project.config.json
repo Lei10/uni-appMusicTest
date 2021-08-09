@@ -7,42 +7,35 @@
     "urlCheck": false,
     "es6": true,
     "postcss": true,
-    "minified": true,
-    "newFeature": true,
-    "coverView": true,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": false
+    "minified": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "touristappid",
   "projectname": "MusicTest",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
+      "current": -1,
       "list": []
     },
     "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "current": 0,
+      "list": [
+        {
+          "name": "list",
+          "query": "",
+          "id": 0,
+          "pathName": "/pages/list/list"
+        }
+      ]
     }
   }
 }
