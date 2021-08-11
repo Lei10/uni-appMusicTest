@@ -1,6 +1,6 @@
 <template>
 	<view class="music-head"  :style="{ color : color}">
-		<view v-if="icon" class="music-head-icon">
+		<view v-if="icon" class="music-head-icon" :class=" { 'music-head-iconblack' : iconblack } ">
 			<text class="iconfont iconzuojiantou-copy" @tap="handleToBack"></text> | <text class="iconfont iconshouye" @tap="handleToHome"></text>
 		</view>
 		{{ title }}
@@ -15,7 +15,7 @@
 				
 			};
 		},
-		props : ['title','icon','color'],
+		props : ['title','icon','color','iconblack'],
 		methods : {
 			handleToBack(){
 				uni.navigateBack();
@@ -51,5 +51,10 @@
 		border-radius: 15px;
 		display: flex;
 		justify-content: space-evenly;
+	}
+	.music-head-iconblack{
+		color: black;
+		border: 1px #eaeaea solid;
+		background: white;
 	}
 </style>

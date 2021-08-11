@@ -32,4 +32,5 @@
 		filter: blur(20px);
 		transform: scale(1.2);
 	}
+	
 </style>

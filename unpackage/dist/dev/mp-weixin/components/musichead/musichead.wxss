@@ -25,4 +25,9 @@
 	-webkit-justify-content: space-evenly;
 	        justify-content: space-evenly;
 }
+.music-head-iconblack.data-v-e0b6e5e0{
+	color: black;
+	border: 1px #eaeaea solid;
+	background: white;
+}
 
