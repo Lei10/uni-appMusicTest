@@ -1,6 +1,11 @@
 {
   "navigationStyle": "custom",
   "usingComponents": {
+<<<<<<< HEAD
     "musichead": "/components/musichead/musichead"
+=======
+    "musichead": "/components/musichead/musichead",
+    "m-for-skeleton": "/components/m-for-skeleton/m-for-skeleton"
+>>>>>>> 49a9a9c (music)
   }
 }

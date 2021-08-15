@@ -31,8 +31,13 @@ function hasOwn(obj, key) {
 
 function noop() {}
 
+<<<<<<< HEAD
 /**
                     * Create a cached version of a pure function.
+=======
+/**
+                    * Create a cached version of a pure function.
+>>>>>>> 49a9a9c (music)
                     */
 function cached(fn) {
   var cache = Object.create(null);
@@ -42,8 +47,13 @@ function cached(fn) {
   };
 }
 
+<<<<<<< HEAD
 /**
    * Camelize a hyphen-delimited string.
+=======
+/**
+   * Camelize a hyphen-delimited string.
+>>>>>>> 49a9a9c (music)
    */
 var camelizeRE = /-(\w)/g;
 var camelize = cached(function (str) {
@@ -1057,6 +1067,7 @@ function processEventExtra(vm, extra, event) {
   var extraObj = {};
 
   if (Array.isArray(extra) && extra.length) {
+<<<<<<< HEAD
     /**
                                               *[
                                               *    ['data.items', 'data.id', item.data.id],
@@ -1067,6 +1078,18 @@ function processEventExtra(vm, extra, event) {
                                               *    ['metas', 'id', meta.id]
                                               *],
                                               *'test'
+=======
+    /**
+                                              *[
+                                              *    ['data.items', 'data.id', item.data.id],
+                                              *    ['metas', 'id', meta.id]
+                                              *],
+                                              *[
+                                              *    ['data.items', 'data.id', item.data.id],
+                                              *    ['metas', 'id', meta.id]
+                                              *],
+                                              *'test'
+>>>>>>> 49a9a9c (music)
                                               */
     extra.forEach(function (dataPath, index) {
       if (typeof dataPath === 'string') {
